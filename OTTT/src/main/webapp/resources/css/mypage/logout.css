@@ -96,7 +96,7 @@ header{
 
 
 .h-icon > ul > li:first-child > a{
-    background:url("../images/icon/search02.png");
+    background:url("../../images/icon/search02.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -105,7 +105,7 @@ header{
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../images/icon/free-icon-anime-2314736.png");
+    background:url("../../images/img/profile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -114,7 +114,7 @@ header{
 }
 
 .h-icon > ul > li:first-child > a:hover{
-    background: url("../images/icon/search-h.png");
+    background: url("../../images/icon/search-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -123,7 +123,7 @@ header{
 }
 
 /* .h-icon > ul > li:last-child > a:hover{
-    background: url("../images/icon/user-h.png");
+    background: url("../../images/icon/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
