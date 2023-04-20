@@ -158,7 +158,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 
 
 .h-icon > ul > li:first-child > a{
-    background:url("../images/icon/search02.png");
+    background:url("../../images/icon/search02.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -167,7 +167,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../images/icon/profile.png");
+    background:url("../../images/img/profile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -176,7 +176,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:first-child > a:hover{
-    background: url("../images/icon/search-h.png");
+    background: url("../../images/icon/search-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -185,7 +185,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 /* .h-icon > ul > li:last-child > a:hover{
-    background: url("../images/icon/user-h.png");
+    background: url("../../images/icon/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -958,9 +958,14 @@ form label{
 }
 
 .footer-comment{
+
     position: absolute;
     top: 5px;
     left: 110px;
+}
+.footer-comment  img{
+	width: 25px;
+	height: 25px;
 }
 
 .f-left > div{
