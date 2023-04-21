@@ -64,7 +64,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 
 
 .h-icon > ul > li:first-child > a{
-    background:url("../../../images/icon/search02.png");
+    background:url("../images/search02.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -73,7 +73,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../../../images/img/profile.png");
+    background:url("../images/profile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -82,7 +82,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:first-child > a:hover{
-    background: url("../../../images/icon/search-h.png");
+    background: url("../images/search-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -187,7 +187,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .maintext{
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 0px 20px;
     background : #0B0C0B;
     border-radius: 10px;
     max-height: max-content;
@@ -243,7 +243,6 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 .re_comment_img{
     width:25px;
     height: 25px;
-    margin-left: 10px;
 }
 
 
@@ -272,7 +271,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .pro-total{
-    width: 820px;
+    width: 900px;
     display: flex;
     justify-content: space-between;
     margin-left: 70px;
@@ -354,11 +353,6 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
     position: relative;
     left: 58px;
     bottom: 25px;
-}
-
-.pro_info{
-	display: flex;
-    justify-content: space-between;
 }
 
 
