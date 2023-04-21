@@ -1,24 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 <!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ottt</title>  
-    <script src="./script/jquery-3.6.1.min.js"></script>
-    <script src="./script/script.js"></script>
+    <title>OTTT</title>  
+    <script src="${path}/resources/js/workDetailPage/script/jquery-3.6.1.min.js"></script>
+    <script src="${path}/resources/js/workDetailPage/script/reply.js"></script>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css" > 
+    <link rel="stylesheet" href="${path}/resources/css/workDetailPage/reply.css" > 
   </head>
   <body style="background-color: #202020; color: #fff;">
     <div class="wrap">
       <header>
         <div class="logo">
-          <a href="../OTTT 메인, 검색/main.html">
-            <img src="./images/logo/OTTT.png" alt="로고">
+          <a href="/ottt">
+            <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
           </a>
         </div>
         <nav class="gnb">
@@ -66,13 +70,13 @@
             <img class="netfilx" src="./images/icon/넷플릭스.png" alt="넷플릭스아이콘">
           </a> -->
           <a href="#">
-            <img class="watcha" src="./images/icon/넷플릭스.png" alt="넷플릭스아이콘">
+            <img class="watcha" src="${path}/resources/images/icon/netplix.png" alt="넷플릭스아이콘">
           </a>
         </div>
       </div>      
       
       <div class="main-img">
-        <img src="./images/movie/서부 전선 이상 없다.png" alt="서부 전선 이상 없다 이미지">
+        <img src="${path}/resources/images/서부 전선 이상 없다.png" alt="서부 전선 이상 없다 이미지">
       </div>
 
       <div class="info">
@@ -125,7 +129,7 @@
         </div>
         <div class="user-info">
           <div class="info-icon">
-            <img src="./images/icon/profile.png" alt="유저아이콘">
+            <img src="${path}/resources/images/img/profile.png" alt="유저아이콘">
           </div>
           <div class="user-name">
             <a href="../mypage황정현/mypage.html">
@@ -137,7 +141,7 @@
         <div class="review-box">
           <div class="review-box-header">
             <div class="user-icon">
-              <img src="./images/icon/profile.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/img/profile.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../mypage황정현/mypage.html">
@@ -167,7 +171,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -177,7 +181,7 @@
                 </li>
                 <li>
                   <div class="footer-comment">
-                    <img src="./images/icon/댓글.png" alt="댓글아이콘">
+                    <img src="${path}/resources/images/img/댓글.png" alt="댓글아이콘">
                   </div>
                   <div class="comment-count">
                     <p>
@@ -190,13 +194,13 @@
             <div>
 
                   <div class="report">
-                    <button><img src="./images/icon/신고하기.png" alt="신고">
+                    <button><img src="${path}/resources/images/img/신고하기.png" alt="신고">
                       </button>
                       <button>신고</button>
                   </div>
                   <div class="add-comment">
                     <div class="position1">
-                    <button id="review-button"><img src="./images/icon/댓글.png" alt="봣어요">답글달기</button>
+                    <button id="review-button"><img src="${path}/resources/images/img/댓글.png" alt="봣어요">답글달기</button>
                   </div>
                   <div class="review-back">1</div>
                   <div id="review-popup" class="popup11">
@@ -224,10 +228,10 @@
                       </button>
                     </form>
                   </div>
-                 <!-- <div id="review-result">
+                  <div id="review-result">
         
                     
-                  </div> -->
+                  </div> 
                     </div>
                     </div>
                   
@@ -247,7 +251,7 @@
       <div class="reply-box">
         <div class="reply-box-header">
           <div class="user-icon">
-            <img src="./images/icon/user.png" alt="유저 이미지파일">
+            <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
           </div>
           <div class="user-name">
             <a href="../ottt박소율/mypageshow.html">
@@ -263,7 +267,7 @@
             <ul>
               <li>
                 <div class="like">
-                  <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                  <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                 </div>
                 <div class="like-count">
                   <button>
@@ -278,7 +282,7 @@
               <li>
                 <div class="report">
                   
-                <button><img src="./images/icon/신고하기.png" alt="신고"></button>
+                <button><img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                 </div>
               </li>
@@ -287,7 +291,7 @@
                   <li>
                     <div class="like-b">
                       <button>
-                      <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                      <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                     </button>
                     </div>
                     <div class="like-c">
@@ -303,7 +307,7 @@
         <div class="reply-box">
           <div class="reply-box-header">
             <div class="user-icon">
-              <img src="./images/icon/user.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../ottt박소율/mypageshow.html">
@@ -319,7 +323,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -334,7 +338,7 @@
                 <li>
                   <div class="report">
                     
-                  <button><img src="./images/icon/신고하기.png" alt="신고"></button>
+                  <button><img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                   </div>
                 </li>
@@ -342,7 +346,7 @@
                   <div class="add-comment">
                     <li>
                       <div class="like-b">
-                        <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                        <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                       </div>
                       <div class="like-c">
                       <button>좋아요</button>
@@ -357,7 +361,7 @@
         <div class="reply-box">
           <div class="reply-box-header">
             <div class="user-icon">
-              <img src="./images/icon/user.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../ottt박소율/mypageshow.html">
@@ -373,7 +377,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -387,7 +391,7 @@
               <ul>
                 <li>
                   <div class="report">
-                  <button><img src="./images/icon/신고하기.png" alt="신고"></button>
+                  <button><img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                   </div>
                 </li>
@@ -395,7 +399,7 @@
                   <div class="add-comment">
                     <li>
                       <div class="like-b">
-                        <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                        <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                       </div>
                       <div class="like-c">
                       <button>좋아요</button>
@@ -410,7 +414,7 @@
         <div class="reply-box">
           <div class="reply-box-header">
             <div class="user-icon">
-              <img src="./images/icon/user.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../ottt박소율/mypageshow.html">
@@ -426,7 +430,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -440,7 +444,7 @@
               <ul>
                 <li>
                   <div class="report">
-                  <button><img src="./images/icon/신고하기.png" alt="신고"></button>
+                  <button><img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                   </div>
                 </li>
@@ -448,7 +452,7 @@
                   <div class="add-comment">
                     <li>
                       <div class="like-b">
-                        <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                        <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                       </div>
                       <div class="like-c">
                       <button>좋아요</button>
@@ -463,7 +467,7 @@
         <div class="reply-box">
           <div class="reply-box-header">
             <div class="user-icon">
-              <img src="./images/icon/user.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../ottt박소율/mypageshow.html">
@@ -479,7 +483,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -493,7 +497,7 @@
               <ul>
                 <li>
                   <div class="report">
-                  <button><img src="./images/icon/신고하기.png" alt="신고"></button>
+                  <button><img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                   </div>
                 </li>
@@ -501,7 +505,7 @@
                   <div class="add-comment">
                     <li>
                       <div class="like-b">
-                        <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                        <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                       </div>
                       <div class="like-c">
                       <button>좋아요</button>
@@ -516,7 +520,7 @@
         <div class="reply-box">
           <div class="reply-box-header">
             <div class="user-icon">
-              <img src="./images/icon/user.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../ottt박소율/mypageshow.html">
@@ -532,7 +536,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -547,7 +551,7 @@
                 <li>
                   <div class="report">
                   <button>
-                      <img src="./images/icon/신고하기.png" alt="신고"></button>
+                      <img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                   </div>
                 </li>
@@ -555,7 +559,7 @@
                   <div class="add-comment">
                     <li>
                       <div class="like-b">
-                        <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                        <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                       </div>
                       <div class="like-c">
                       <button>좋아요</button>
@@ -570,7 +574,7 @@
         <div class="reply-box">
           <div class="reply-box-header">
             <div class="user-icon">
-              <img src="./images/icon/user.png" alt="유저 이미지파일">
+              <img src="${path}/resources/images/icon/user.png" alt="유저 이미지파일">
             </div>
             <div class="user-name">
               <a href="../ottt박소율/mypageshow.html">
@@ -586,7 +590,7 @@
               <ul>
                 <li>
                   <div class="like">
-                    <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                    <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                   </div>
                   <div class="like-count">
                     <p>
@@ -600,7 +604,7 @@
               <ul>
                 <li>
                   <div class="report">
-                    <button><img src="./images/icon/신고하기.png" alt="신고"></button>
+                    <button><img src="${path}/resources/images/img/신고하기.png" alt="신고"></button>
                     <button>신고</button>
                   </div>
                 </li>
@@ -608,7 +612,7 @@
                   <div class="add-comment">
                     <li>
                       <div class="like-b">
-                        <img src="./images/icon/좋아요.png" alt="좋아요아이콘">
+                        <img src="${path}/resources/images/img/좋아요.png" alt="좋아요아이콘">
                       </div>
                       <div class="like-c">
                       </button>좋아요</button>
