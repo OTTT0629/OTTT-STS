@@ -124,7 +124,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:first-child > a{
-    background:url("../images/search02.png");
+    background:url("../../images/icon/search02.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -133,7 +133,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../images/profile.png");
+    background:url("../../images/img/profile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -142,7 +142,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 .h-icon > ul > li:first-child > a:hover{
-    background: url("../images/search-h.png");
+    background: url("../../images/icon/search-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -151,7 +151,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 }
 
 /* .h-icon > ul > li:last-child > a:hover{
-    background: url("../images/user-h.png");
+    background: url("../../images/icon/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
