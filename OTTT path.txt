@@ -1,68 +1,64 @@
-*community °æ·Î
+*community ê²½ë¡œ
 freecommunity: /community
 	-community post: /community/post
 endmovie: /community/endmovie(/coupang, /disney, /netflix, /tving, /watcha, /wavve)
-	-´õº¸±â: /community/endmovie/more
+	-ë”ë³´ê¸°: /community/endmovie/more
 notice: /community/notice
 priceInfo: /community(/priceInfoTving, /priceInfoCoupang, /priceInfoDisney, /priceInfoNetflix, /priceInfoWatcha, /priceInfoWavve)
-QnA: /community/QnA(±ÛÀÛ¼º:/create Ãß°¡ )
+QnA: /community/QnA(ê¸€ì‘ì„±:/create ì¶”ê°€ )
 
-*genre °æ·Î
+*genre ê²½ë¡œ
 animation: /genre/animation
 drama: /genre/drama
 interest: /genre/interest
 movie: /genre/movie
 
-*mycommunity °æ·Î
-³»°¡ ¾´ ´ñ±Û º¸±â: /mycommynity/comment
-³»°¡ ÁÁ¾Æ¿ä´©¸¥ ±Û º¸±â: /mycommynity/likecommunity
-³»°¡ ÀÛ¼ºÇÑ °Ô½Ã±Û º¸±â: /mycommynity/postcommu
+*mycommunity ê²½ë¡œ
+ë‚´ê°€ ì“´ ëŒ“ê¸€ ë³´ê¸°: /mycommynity/comment
+ë‚´ê°€ ì¢‹ì•„ìš”ëˆ„ë¥¸ ê¸€ ë³´ê¸°: /mycommynity/likecommunity
+ë‚´ê°€ ì‘ì„±í•œ ê²Œì‹œê¸€ ë³´ê¸°: /mycommynity/postcommu
 
-*mypage °æ·Î
+*mypage ê²½ë¡œ
 mypage main: /mypage
-1. follower/following È®ÀÎ
+1. follower/following í™•ì¸
 follower: /mypage/follower
 following: /mypage/following
 2. setting: /mypage/setting
-1) ÇÁ·ÎÇÊ º¯°æ: /mypage/setting/myprofile
-2) ³»Á¤º¸ º¯°æ: /mypage/setting/myinfo
-3) È¸¿øÅ»Åğ
+1) í”„ë¡œí•„ ë³€ê²½: /mypage/setting/myprofile
+2) ë‚´ì •ë³´ ë³€ê²½: /mypage/setting/myinfo
+3) íšŒì›íƒˆí‡´
 3. mypage var
-1) record(´ÙÀÌ¾î¸®, ¸®ºä)
--´ÙÀÌ¾î¸®: /mypage/mydiary
-	-ÀÛ¼º±Û º¸±âÆäÀÌÁö: /mypage/mydiary/poster
-	-±ÛÀÛ¼º ÆäÀÌÁö: /mypage/mydiary/create
--¸®ºä: /mypage/myreview
-2) ¾Ë¸²ÇÔ: /mypage/alarm
-3) ÂÊÁöÇÔ: /mypage/message
-	-¼ÂÆÃ: /mypage/messagesetting
-4) Âò¸ñ·Ï: /mypage/wishlist
-5) ºÃ¾î¿ä: /mypage/watched
+1) record(ë‹¤ì´ì–´ë¦¬, ë¦¬ë·°)
+-ë‹¤ì´ì–´ë¦¬: /mypage/mydiary
+	-ì‘ì„±ê¸€ ë³´ê¸°í˜ì´ì§€: /mypage/mydiary/poster
+	-ê¸€ì‘ì„± í˜ì´ì§€: /mypage/mydiary/create
+-ë¦¬ë·°: /mypage/myreview
+2) ì•Œë¦¼í•¨: /mypage/alarm
+3) ìª½ì§€í•¨: /mypage/message
+	-ì…‹íŒ…: /mypage/messagesetting
+4) ì°œëª©ë¡: /mypage/wishlist
+5) ë´¤ì–´ìš”: /mypage/watched
  
 * search: /search
 
-* workDetailPage °æ·Î
+* workDetailPage ê²½ë¡œ
 workDetailPage: /detailPage
 workReview: /detailPage/review
 reviewReply: /detailPage/reply
 
-* login °æ·Î
-1) ·Î±×ÀÎÆäÀÌÁö: /login
-2) È¸¿ø°¡ÀÔÆäÀÌÁö
-	-¾à°üµ¿ÀÇ: /signin/term
-	-È¸¿ø°¡ÀÔ: /signin/register
-	-ÇÊ¼öÁ¤º¸: /signin/reqInfo
-	-Ãß°¡Á¤º¸: /signin/addInfo
-	-°¡ÀÔ¼º°ø: /signin/complete
-3) ID/PWD Ã£±â
-	-¾ÆÀÌµğÃ£±â: /login/findID
-	-ºñ¹Ğ¹øÈ£Ã£±â: /login/findPwd
-	-¾ÆÀÌµğÈ®ÀÎ: /login/checkID
-	-ºñ¹Ğ¹øÈ£Àç¼³Á¤: /login/checkPwd
-
-ÁÁ¾Æ¿ä ´©¸¥ ¸®ºä??
-´ñ±Û ÀÛ¼º ¸®ºä??
-
+* login ê²½ë¡œ
+1) ë¡œê·¸ì¸í˜ì´ì§€: /login
+2) íšŒì›ê°€ì…í˜ì´ì§€
+	-ì•½ê´€ë™ì˜: /signin/term
+	-íšŒì›ê°€ì…: /signin/register
+	-í•„ìˆ˜ì •ë³´: /signin/reqInfo
+	-ì¶”ê°€ì •ë³´: /signin/addInfo
+	-ê°€ì…ì„±ê³µ: /signin/complete
+3) ID/PWD ì°¾ê¸°
+	-ì•„ì´ë””ì°¾ê¸°: /login/findID
+	-ë¹„ë°€ë²ˆí˜¸ì°¾ê¸°: /login/findPwd
+	-ì•„ì´ë””í™•ì¸: /login/checkID
+	-ë¹„ë°€ë²ˆí˜¸ì¬ì„¤ì •: /login/checkPwd
 
 
 
