@@ -18,37 +18,37 @@
     <div class="wrap">
       <header>
         <div class="logo">
-          <a href="#">
+          <a href="<c:url value="/" />">
             <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
           </a>
         </div>
         <nav class="gnb">
           <ul>
             <li>
-              <a href="#">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="#">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="#">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="#">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="#">게시판</a>
+              <a href="<c:url value="/community" />">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="#">
+              <a href="<c:url value='/search' />">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="<c:url value='/mypage' />">
               </a>
             </li>
           </ul>
@@ -58,12 +58,12 @@
       <!--meun bar Start-->  
         <div id="line-1" >
           <nav class="nav">
-            <a class="nav-link1" href="#" style="color: #33ff33;">자유게시판</a>
-            <a class="nav-link1" href="#" >종료예정작</a>
-            <a class="nav-link1" href="#" >가격정보</a>
-            <a class="nav-link1" href="#">Q&A</a>
-            <a class="nav-link1" href="#">공지사항</a>
-          </nav>
+          <a class="nav-link1" href="<c:url value='/community' />">자유게시판</a>
+          <a class="nav-link1" href="<c:url value='/community/endmovie/tving' />">종료예정작</a>
+          <a class="nav-link1" href="<c:url value='/community/priceInfoTving' />">가격정보</a>
+          <a class="nav-link1" href="<c:url value='/community/QnA' />">Q&A</a>
+          <a class="nav-link1" href="<c:url value='/community/notice' />">공지사항</a>
+        </nav>
         </div>
         <div id="line-2">
           <div class="Lcontent">
@@ -74,21 +74,21 @@
             <ul class="movepage">
               <li style="display: flex;">
                 <div class="list-group">
-                    <a href="./mypost_collection.html" class="list-group-item list-group-item-action" style="color: #33ff33;">
+                    <a href="<c:url value='/mycommynity/postcommu' />" class="list-group-item list-group-item-action" style="color: #33ff33;">
                       <img class="side_img" src="${path}/resources/images/img/KakaoTalk_20230411_161709664.png" alt="post">내가 쓴 게시글
                     </a>
                 </div>
               </li>
               <li style="display: flex;">
                   <div class="list-group">
-                      <a href="./like_collection.html" class="list-group-item list-group-item-action">
+                      <a href="<c:url value='/mycommynity/likecommunity' />" class="list-group-item list-group-item-action">
                         <img class="side_img" src="${path}/resources/images/img/free-icon-heart-6063477 2.png" alt="heart">좋아요 누른 게시글
                       </a>
                   </div>
               </li>
               <li style="display: flex;">
                   <div class="list-group">
-                      <a href="./comment_collection.html" class="list-group-item list-group-item-action" >
+                      <a href="<c:url value='/mycommynity/comment' />" class="list-group-item list-group-item-action" >
                         <img class="side_img" src="${path}/resources/images/img/comment.png" >댓글 작성 게시물
                       </a>
                   </div>
@@ -105,17 +105,11 @@
             <div class="post_list">
               <ul class="post" >
                 <div class="post_info">
-                  <li>
-                    <a href="#"><img class="usur_img" src="${path}/resources/images/icon/user01.png" alt="profile"></a>
-                  </li>
-                  
-                  <li>
-                    <a href="#"><span class="nickname">Nickname</span></a>
-                  </li>
-                  <li>
-                    <span id="current_date" >작성한 날짜</span>
-                  </li>
-                  <li>
+                  <div style="display: flex;">
+                  	<a href="#"><img class="usur_img" src="${path}/resources/images/icon/user01.png" alt="profile"></a>
+                  	<a href="#"><span class="nickname">Nickname</span></a>
+                  	<span id="current_date" >작성한 날짜</span>
+                  </div>
                     <div>
                       <div class="modi-del">
                         <!-- Button trigger modal -->
@@ -163,8 +157,7 @@
                         </div>
                       </div>
                     </div>
-                    </div>
-                  </li>  
+                    </div> 
                 </div>                
                 <li style="width: 900px;">
                   <a href="#" class="main_article">내가 작성한 댓글이 올라감</a>
@@ -180,17 +173,11 @@
               </ul>            
               <ul class="post" >
                 <div class="post_info">
-                  <li>
-                    <a href="#"><img class="usur_img" src="${path}/resources/images/icon/user01.png" alt="profile"></a>
-                  </li>
-                  
-                  <li>
-                    <a href="#"><span class="nickname">Nickname</span></a>
-                  </li>
-                  <li>
-                    <span id="current_date" >작성한 날짜</span>
-                  </li>
-                  <li>
+                  <div style="display: flex;">
+                  	<a href="#"><img class="usur_img" src="${path}/resources/images/icon/user01.png" alt="profile"></a>
+                  	<a href="#"><span class="nickname">Nickname</span></a>
+                  	<span id="current_date" >작성한 날짜</span>
+                  </div>
                     <div>
                       <div class="modi-del">
                         <!-- Button trigger modal -->
@@ -239,7 +226,6 @@
                       </div>
                     </div>
                     </div>
-                  </li>  
                 </div>                
                 <li style="width: 900px;">
                   <a href="#" class="main_article">내가 작성한 댓글이 올라감</a>
@@ -255,17 +241,11 @@
               </ul>  
               <ul class="post" >
                 <div class="post_info">
-                  <li>
-                    <a href="#"><img class="usur_img" src="${path}/resources/images/icon/user01.png" alt="profile"></a>
-                  </li>
-                  
-                  <li>
-                    <a href="#"><span class="nickname">Nickname</span></a>
-                  </li>
-                  <li>
-                    <span id="current_date" >작성한 날짜</span>
-                  </li>
-                  <li>
+                  <div style="display: flex;">
+                  	<a href="#"><img class="usur_img" src="${path}/resources/images/icon/user01.png" alt="profile"></a>
+                  	<a href="#"><span class="nickname">Nickname</span></a>
+                  	<span id="current_date" >작성한 날짜</span>
+                  </div>
                     <div>
                       <div class="modi-del">
                         <!-- Button trigger modal -->
@@ -313,8 +293,7 @@
                         </div>
                       </div>
                     </div>
-                    </div>
-                  </li>  
+                    </div>  
                 </div>                
                 <li style="width: 900px;">
                   <a href="#" class="main_article">내가 작성한 댓글이 올라감</a>

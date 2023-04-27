@@ -19,37 +19,39 @@
     <div class="wrap">
       <header>
         <div class="logo">
-            <a href="../genre/images/logo/OTTT.png">
-                <img src="./images/logo/OTTT.png" alt="logo">
+            <a href="<c:url value="/" />">
+            <img src="${path}/resources/images/logo/OTTT.png" alt="logo">
           </a>
         </div>
         <nav class="gnb">
           <ul>
             <li>
-                <a class="#" href="./1.movie.html">영화</a>
-              </li>
-              <li>
-                <a class="#" href="./2.drama.html">드라마</a>
-              </li>
-              <li>
-                <a class="#" href="./3.interest.html" style="color: #33ff33;">예능</a>
-              </li>
-              <li>
-                <a class="#" href="./4.animation.html">애니</a>
-              </li>
+              <a href="<c:url value="/genre/movie" />">영화</a>
+            </li>
             <li>
-              <a href="../자유게시판/자유게시판 main.html">게시판</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/interest" />" style="color: #33ff33;">예능</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/animation" />">애니</a>
+            </li>
+            <li>
+              <a href="<c:url value="/community" />">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="../OTTT 메인, 검색/search.html">
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
               </a>
             </li>
             <li>
-              <a href="../mypage황정현/mypage.html">
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
               </a>
             </li>
           </ul>

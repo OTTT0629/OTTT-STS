@@ -232,7 +232,7 @@ header{
 }
 .back input[type="button"],
 .complate input[type="submit"] {
-    width: 150px; 
+    width: 400px;  
     height: 70px;
     margin-top: 120px;
     border-width: 1px;

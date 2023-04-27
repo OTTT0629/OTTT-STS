@@ -130,37 +130,39 @@
       </div>
       <header>
         <div class="logo">
-          <a href="../OTTT 메인, 검색/main.html">
-            <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
-          </a>
-        </div>
-        <nav class="gnb">
-          <ul>
+          <a href="<c:url value="/" />">
+				  <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
+				</a>
+			</div>
+			<nav class="gnb">
+				<ul>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="../자유게시판/자유게시판 main.html">게시판</a>
+              <a href="<c:url value="/community" />">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="../OTTT 메인, 검색/search.html">
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
               </a>
             </li>
             <li>
-              <a href="../mypage황정현/mypage.html">
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
               </a>
             </li>
           </ul>
@@ -443,7 +445,7 @@
         <div class="review-count">
           <p>총 70개의 리뷰가 있습니다.</p>           
           <div class="more-see">
-            <a href="../OTTT_review_page유찬희/review.html">
+            <a href="<c:url value='/detailPage/review' />">
               <p>더보기</p>
             </a>
   
@@ -473,7 +475,7 @@
                     </div>             
                 </div>
           </div>
-          <a href="../OTTT_review_reply_page유찬희/reply.html">
+          <a href="<c:url value='/detailPage/reply' />">
           <div class="review-box-body">
             <p class="review-box-text">"내용 들어갈 자리"</p>
           </div>
@@ -531,7 +533,7 @@
                   </div>             
               </div>
         </div>
-        <a href="../OTTT_review_reply_page유찬희/reply.html">
+        <a href="<c:url value='/detailPage/reply' />">
         <div class="review-box-body">
           <p class="review-box-text">"내용 들어갈 자리"</p>
         </div>
@@ -587,7 +589,7 @@
             </div>
 
       </div>
-      <a href="../OTTT_review_reply_page유찬희/reply.html">
+      <a href="<c:url value='/detailPage/reply' />">
       <div class="review-box-body">
         <p class="review-box-text">"내용 들어갈 자리"</p>
       </div>

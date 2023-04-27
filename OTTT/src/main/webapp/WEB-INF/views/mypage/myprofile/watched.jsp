@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>봤어요-애니</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link rel="stylesheet" href="${path}/resources/css/mypage/watched.css" >
+    <link rel="stylesheet" href="${path}/resources/css/mypage/watched.css" >
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
@@ -20,39 +20,37 @@
     <div class="wrap">
       <header>
         <div class="logo">
-          <a href="../OTTT 메인, 검색/main.html">
-            <img src="{path}/resources/images/logo/메인 OTTT.png" alt="로고">
-          </a>
-        </div>
-        <nav class="gnb">
-          <ul>
+          <a href="<c:url value="/" />">
+			<img src="${path}/resources/images/logo/OTTT.png" alt="로고">
+		  </a>
+			</div>
+			<nav class="gnb">
+				<ul>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="../자유게시판/자유게시판 main.html">게시판</a>
+              <a href="<c:url value="/community" />">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="../OTTT 메인, 검색/search.html">
-                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
+              <a href="<c:url value='/search' />">
               </a>
             </li>
             <li>
-              <a href="../mypage황정현/mypage.html">
-                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
+              <a href="<c:url value='/mypage' />">
               </a>
             </li>
           </ul>
@@ -62,20 +60,11 @@
       <section class="sec01">
         <nav class="mnb">
           <ul>
-            <li>
-              <a href="../mypage황정현/myreview.html">기록</a>
-            </li>
-            <li>
-              <a href="./wishlist-1.html">찜목록</a>
-            </li>
-            <li>
-              <a style="color: #33ff33" href="./watched-1.html">봤어요</a>
-            </li>
-            <li>
-              <a href="./message alarm.html">알림함</a>
-            </li>
-            <li>
-              <a href="./message.html">쪽지함</a>
+	          <li><a href="<c:url value="/mypage/myreview" />" class="mreview">기록</a></li>
+	          <li><a href="<c:url value="/mypage/wishlist" />">찜목록</a></li>
+	          <li><a href="<c:url value="/mypage/watched" />" style="color: #33ff33">봤어요</a></li>
+	          <li><a href="<c:url value="/mypage/alarm" />">알림함</a></li>
+	          <li><a href="<c:url value="/mypage/message" />">쪽지함</a>
             </li>
           </ul>
         </nav>
@@ -132,7 +121,7 @@
                 <div class="posterzip1">
 
                     <div class="work-info">
-                        <a href="../채경철/index.html">
+                        <a href="<c:url value="/detailPage" />">
                             <img src="${path}/resources/images/poster/subu.jpg" class="poster"/>
 
                         </a>

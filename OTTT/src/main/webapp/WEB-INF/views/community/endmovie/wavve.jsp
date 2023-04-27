@@ -19,38 +19,38 @@
      <div class="wrap">
       <header >
         <div class="logo">
-          <a href="../OTTT 메인, 검색/main.html">
+          <a href="<c:url value="/" />">
             <img src="${path}/resources/images/logo/OTTT.png" alt="logo">
           </a>
         </div>
         <nav class="gnb">
           <ul>
             <li>
-              <a href="../genre/1.movie.html">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="../genre/2.drama.html">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="../genre/3.interest.html">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="../genre/4.animation.html">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="../자유게시판/자유게시판 main.html" style="color: #33ff33;">게시판</a>
+              <a href="<c:url value="/community" />" style="color: #33ff33;">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="../OTTT 메인, 검색/search.html">
+              <a href="<c:url value='/search' />">
                 <!-- <img src="./images/icon/search02.png" alt="검색"> -->
               </a>
             </li>
             <li>
-              <a href="../mypage황정현/mypage.html">
+              <a href="<c:url value='/mypage' />">
                 <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
               </a>
             </li>
@@ -59,21 +59,22 @@
       </header>
       <div id="line-1" >
         <nav class="nav">
-          <a class="nav-link1" href="#">자유게시판</a>
-          <a class="nav-link1" href="./endmovie.html" style="color: #33ff33;">종료예정작</a>
-          <a class="nav-link1" href="#">가격정보</a>
-          <a class="nav-link1" href="#">Q&A</a>
-          <a class="nav-link1" href="#">공지사항</a>
+          <a class="nav-link1" href="<c:url value='/community' />">자유게시판</a>
+          <a class="nav-link1" href="<c:url value='/community/endmovie' />" style="color: #33ff33;">종료예정작</a>
+          <a class="nav-link1" href="<c:url value='/community/priceInfoTving' />">가격정보</a>
+          <a class="nav-link1" href="<c:url value='/community/QnA' />">Q&A</a>
+          <a class="nav-link1" href="<c:url value='/community/notice' />">공지사항</a>
         </nav>
       </div>
       <div id="line-2" >
         <nav class="nav2">
-          <a class="nav-link2" href="./1.tving.html"><img class="ott_icon" src="${path}/resources/images/icon/티빙.png" alt="tving" border-radius: 15px;></a>
-          <a class="nav-link2" href="./2.netflix.html"><img class="ott_icon" src="${path}/resources/images/icon/netplix.png" alt="netflix"></a>
-          <a class="nav-link2" href="./3.wavve.html"><img class="ott_icon" src="${path}/resources/images/icon/웨이브.png" alt="wavve" style="border: 3px solid #33ff33; border-radius: 15px;"></a>
-          <a class="nav-link2" href="./4.coupang.html"><img class="ott_icon" src="${path}/resources/images/icon/쿠팡플레이.png" alt="coupang"></a>
-          <a class="nav-link2" href="./5.watcha.html"><img class="ott_icon" src="${path}/resources/images/icon/왓챠.png" alt="watcha"></a>
-          <a class="nav-link2" href="./6.disney.html"><img class="ott_icon" src="${path}/resources/images/icon/디즈니플러스.png" alt="disney"></a>
+        
+          <a class="nav-link2" href="<c:url value='/community/endmovie/tving' />"><img class="ott_icon" src="${path}/resources/images/icon/티빙.png" alt="tving"></a>
+          <a class="nav-link2" href="<c:url value='/community/endmovie/netflix' />"><img class="ott_icon" src="${path}/resources/images/icon/netplix.png" alt="netflix"></a>
+          <a class="nav-link2" href="<c:url value='/community/endmovie/wavve' />"><img class="ott_icon" src="${path}/resources/images/icon/웨이브.png" alt="wavve" style="border: 3px solid #33ff33; border-radius: 15px;"></a>
+          <a class="nav-link2" href="<c:url value='/community/endmovie/coupang' />"><img class="ott_icon" src="${path}/resources/images/icon/쿠팡플레이.png" alt="coupang"></a>
+          <a class="nav-link2" href="<c:url value='/community/endmovie/watcha' />"><img class="ott_icon" src="${path}/resources/images/icon/왓챠.png" alt="watcha"></a>
+          <a class="nav-link2" href="<c:url value='/community/endmovie/disney' />"><img class="ott_icon" src="${path}/resources/images/icon/디즈니플러스.png" alt="disney"></a>
         </nav>
       </div>
       <div class="voucher-inner-wrap">
@@ -135,7 +136,7 @@
             <td>19</td>
             <td>20<a href="#" class="movie-sub1" id="movieid"><h6>· 태극기휘날리며</h6></a>
             <a href="#" class="movie-sub1" id="movieid"><h6>· 황비홍2</h6></a>
-            <button class="thebogi"><a href="./month4.html"><h6>더 보기</h6></a></button></td>
+            <button class="thebogi"><a href="<c:url value='/community/endmovie/more' />"><h6>더 보기</h6></a></button></td>
             <td>21</td>
             <td>22</td>
             <td>23</td>

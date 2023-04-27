@@ -17,51 +17,51 @@
 	<div class="wrap">
 		<header>
 			<div class="logo">
-				 <a href= "<c:url value='/' /> ">
-				  <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
-				</a>
-			</div>
-			<nav class="gnb">
-				<ul>
-			    	<li>
-			    		<a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
-				    </li>
-				    <li>
-				      	<a href="../자유게시판/자유게시판 main.html">게시판</a>
-				    </li>
-			  	</ul>
-			</nav>
-        	<div class="h-icon">
-          		<ul>
-            		<li>
-						<a href="#">
-						<!-- <img src="./images/icon/search02.png" alt="검색"> -->
-						</a>
-		            </li>
-		            <li>
-		            	<a href="#">
-		                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
-		             	</a>
-		            </li>
-				</ul>
+				 <a href="<c:url value="/" />">
+            <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
+          </a>
+        </div>
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="<c:url value="/genre/movie" />">영화</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/interest" />">예능</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/animation" />">애니</a>
+            </li>
+            <li>
+              <a href="<c:url value="/community" />">게시판</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
+              </a>
+            </li>
+            <li>
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
+              </a>
+            </li>
+          </ul>
         	</div>
 		</header>
 		
 		<section class="sec00">
-			<form method="post" action="서버의url" id="membership">
+			<form method="get" action="<c:url value="/login" />" id="membership">
 				<h1 style="font-size: 21px; display: inline-block;">아이디 확인</h1>
-				<div class="Idcheck" >회원님의 아이디는 ddubuck입니다.</div>
+				<div class="Idcheck" >회원님의 아이디는 test입니다.</div>
 					<div class="back" style="display: inline-block; pointer-events: none;">
-						<a href="https://www.naver.com/" style="pointer-events: none;">
+						<a href="<c:url value='/login/findPwd' />" style="pointer-events: none;">
 							<input type="button" value="비밀번호 찾기" style="pointer-events: auto;">
 						</a>
 					</div>

@@ -283,7 +283,7 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 
 .post_info{
     display: flex;
-    max-width: 900pxpx;
+    justify-content: space-between;
 }
 
 .usur_img{
@@ -341,7 +341,6 @@ header{ width: 1200px; height: 130px;box-sizing: border-box;margin: 0 auto;posit
 .re_comment_img{
     width: 30px;
     margin-left: 10px;
-    margin-bottom: 17px;
 }
 
 

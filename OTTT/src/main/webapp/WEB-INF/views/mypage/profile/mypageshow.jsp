@@ -18,37 +18,39 @@
     <div class="wrap">
       <header>
         <div class="logo">
-          <a href="../OTTT 메인, 검색/main.html">
-            <img src="${path}/resources/images/logo/메인 OTTT.png" alt="로고">
+           <a href="<c:url value="/" />">
+            <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
           </a>
         </div>
         <nav class="gnb">
           <ul>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="../자유게시판/자유게시판 main.html">게시판</a>
+              <a href="<c:url value="/community" />">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="../OTTT 메인, 검색/search.html">
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
               </a>
             </li>
             <li>
-              <a href="../mypage황정현/mypage.html">
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
               </a>
             </li>
           </ul>
@@ -66,15 +68,15 @@
                 <span>피카츄</span>
               </li>
               <li class="user-follow">
-                <span onclick="location.href='#'">팔로워</span>
+                <span onclick="location.href='<c:url value="/mypage/follower" />'">팔로워</span>
                 <span>|</span>
-                <span onclick="location.href='#'">팔로잉</span>
+                <span onclick="location.href='<c:url value="/mypage/following" />'">팔로잉</span>
               </li>
             </ul>
         </div>
         <div class="btn_more_div" >
             <button type="button" style="background-color:transparent;" class="btn_more" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="./images/icon/more.png" style="width: 40px;" alt="more">
+                <img src="${path}/resources/images/img/more.png" style="width: 40px;" alt="more">
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">쪽지 보내기</a></li>
@@ -90,15 +92,16 @@
         </div>
         <div class="btn_check_div" style="margin-top: 20px;">
           <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="btn-check-outlined">팔로우 취소<label><br>
+          <label class="btn btn-outline-primary" for="btn-check-outlined">팔로우 취소</label><br>
+        </div>
         </div>
       </section>
           
       <nav class="mnb2">
         <ul>
-          <li><a style="color: #33ff33" href="./mypageshow.html">기록</a></li>
-          <li><a href="./wishlist-1.html">찜목록</a></li>
-          <li><a href="./watched-1.html">봤어요</a></li>
+          <li><a style="color: #33ff33" href="<c:url value="/mypage/myreview" />">기록</a></li>
+          <li><a href="<c:url value="/mypage/wishlist" />">찜목록</a></li>
+          <li><a href=<c:url value="/mypage/watched" />">봤어요</a></li>
         </ul>
       </nav>
 
@@ -110,11 +113,11 @@
             <ul>
               <li class="mydiary">
                 <img class="mimg" src="${path}/resources/images/img/free-icon-diary-6393039.png" alt="다이어리">
-                <a href="#">나만의 다이어리</a>
+               <a href="<c:url value="/mypage/mydiary" />">나만의 다이어리</a>
               </li>
               <li class="myrivew">
                 <img class="mimg" src="${path}/resources/images/img/free-icon-review-3501894.png" alt="리뷰">
-                <a href="#">나의 리뷰</a>
+                <a href="<c:url value="/mypage/myreview" />">나의 리뷰</a>
               </li>
             </ul>
           </div>
@@ -122,22 +125,22 @@
           <div class="mypost">
             <ul>
               <li class="mywrite">
-                <img class="mimg" src="${path}/resources/images/img/iconmycontent.png" alt="게시글">
-                <a href="#">내가 쓴 게시글</a>
+                <img class="mimg" src="${path}/resources/images/img/KakaoTalk_20230411_161709664.png" alt="게시글">
+                <a href="<c:url value="/mycommynity/postcommu" />">내가 쓴 게시글</a>
                 </li>
               <li class="mylike">
-                <img class="mimg" src="${path}/resources/images/img/heart.png" alt="좋아요">
-                <a href="#">좋아요 누른 게시글</a>
+                <img class="mimg" src="${path}/resources/images/img/free-icon-heart-6063477%202.png" alt="좋아요">
+                <a href="<c:url value="/mycommynity/likecommunity" />">좋아요 누른 게시글</a>  
               </li>
               <li class="mycomment">
-                <img class="mimg" src="${path}/resources/images/img/KakaoTalk_20230411_161709664.png" alt="댓글">
-                <a href="#">나의 댓글</a>
+                <img class="mimg" src="${path}/resources/images/img/댓글.png" alt="댓글">
+                <a href="<c:url value="/mycommynity/comment" />">나의 댓글</a>
               </li>
             </ul>
           </div>
         </div>    
       </section>
 
-
+	</div>
   </body>
 </html>

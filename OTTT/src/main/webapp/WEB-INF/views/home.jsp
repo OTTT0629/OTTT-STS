@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="path" value="${pageContext.request.contextPath}"/>  
+<c:set var="loginout" value="${sessionScope.id == null ? 'logout' : 'login'}" />
+<c:set var="loginoutlink" value="${sessionScope.id==null ? '/login' : '/mypage'}" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +30,7 @@
         <div style="background-color: black; text-align: center; height: 850px;">
 
         	<div class="user">
-                <a href="#" >
+                <a href="<c:url value='${loginoutlink}' /> " class="${loginout}">
                     <img src="${path}/resources/images/img/profile.png" class="user-img">
                 </a>
             </div>
@@ -39,17 +41,17 @@
             </div>
             <br/>
             <span class="main-search">
-                <a href="./search.html"><input type="text"/></a>
-                <a href="./search.html" class="search-img">
+                <a href="<c:url value='/search' />"><input type="text"/></a>
+                <a href="<c:url value='/search' />" class="search-img">
                     <!-- <img src="/image/icon/search02.png"/> -->
                 </a>
             </span>
 
             <span class="main-cat">
-                <a href="../0413장르 폼테크추가(수형)/1. index movie.html"><div>영화</div></a>
-                <a href="../0413장르 폼테크추가(수형)/2. index darama.html"><div>드라마</div></a>
-                <a href="../0413장르 폼테크추가(수형)/3. index interest.html"><div>예능</div></a>
-                <a href="../0413장르 폼테크추가(수형)/4. index animation.html"><div>애니</div></a>
+                <a href="<c:url value="/genre/movie" />"><div>영화</div></a>
+                <a href="<c:url value="/genre/drama" />"><div>드라마</div></a>
+                <a href="<c:url value="/genre/interest" />"><div>예능</div></a>
+                <a href="<c:url value="/genre/animation" />"><div>애니</div></a>
             </span>
  
 
@@ -59,42 +61,42 @@
 
         <header class="header" style="position: sticky; top: 0;">
             <div class="logo">
-            <a href="./main.html">
-                <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
-            </a>
-            </div>
-            <nav class="gnb">
-            <ul>
-                <li>
-                <a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
-                </li>
-                <li>
-                <a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
-                </li>
-                <li>
-                <a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
-                </li>
-                <li>
-                <a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
-                </li>
-                <li>
-                <a href="../자유게시판/자유게시판 main.html">게시판</a>
-                </li>
-            </ul>
-            </nav>
-            <div class="h-icon">
-            <ul>
-                <li>
-                <a href="./search.html">
-                    <!-- <img src="./image/icon/search02.png" alt="검색"> -->
-                </a>
-                </li>
-                <li>
-                <a href="../mypage황정현/mypage.html">
-                    <!-- <img src="./image/icon/user01.png" alt="내 정보"> -->
-                </a>
-                </li>
-            </ul>
+            <a href="<c:url value="/" />">
+				  <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
+				</a>
+			</div>
+			<nav class="gnb">
+				<ul>
+            <li>
+              <a href="<c:url value="/genre/movie" />">영화</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/interest" />">예능</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/animation" />">애니</a>
+            </li>
+            <li>
+              <a href="<c:url value="/community" />">게시판</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
+              </a>
+            </li>
+            <li>
+              <a href="<c:url value='${loginoutlink}' /> " class="${loginout}">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
+              </a>
+            </li>
+          </ul>
             </div>
         </header>
 
@@ -105,7 +107,7 @@
                 <div class="cont01">
                     <div class="posterzip1">
                         <div class="work-info">
-                            <a href="../채경철/index.html">
+                            <a href="<c:url value="/detailPage" />">
                                 <img src="${path}/resources/images/poster/subu.jpg" class="poster"/>
                                 <div class="work-review">
                                     <div class="ott-img">

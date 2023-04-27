@@ -19,37 +19,39 @@
     <div class="wrap">
       <header >
         <div class="logo">
-          <a href="#">
+          <a href="<c:url value="/" />">
             <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
           </a>
         </div>
         <nav class="gnb">
           <ul>
             <li>
-              <a href="#">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="#">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="#">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="#">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="#">게시판</a>
+              <a href="<c:url value="/community" />" style="color: #33ff33;">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="#">
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
               </a>
             </li>
           </ul>
@@ -58,12 +60,12 @@
       <main>
         <div id="line-1" >
           <nav class="nav">
-            <a class="nav-link1" href="#" style="color: #33ff33;">자유게시판</a>
-            <a class="nav-link1" href="#" >종료예정작</a>
-            <a class="nav-link1" href="#" >가격정보</a>
-            <a class="nav-link1" href="#">Q&A</a>
-            <a class="nav-link1" href="#">공지사항</a>
-          </nav>
+          <a class="nav-link1" href="<c:url value='/community' />" style="color: #33ff33;">자유게시판</a>
+          <a class="nav-link1" href="<c:url value='/community/endmovie/tving' />">종료예정작</a>
+          <a class="nav-link1" href="<c:url value='/community/priceInfoTving' />">가격정보</a>
+          <a class="nav-link1" href="<c:url value='/community/QnA' />">Q&A</a>
+          <a class="nav-link1" href="<c:url value='/community/notice' />">공지사항</a>
+        </nav>
         </div>
         <div id="line-2">
           <div class="Lcontent">
@@ -74,21 +76,21 @@
             <ul class="movepage">
               <li style="display: flex;">
                 <div class="list-group">
-                    <a href="./mypost_collection.html" class="list-group-item list-group-item-action">
+                    <a href="<c:url value='/mycommynity/postcommu' />" class="list-group-item list-group-item-action">
                       <img class="side_img" src="${path}/resources/images/img/KakaoTalk_20230411_161709664.png" alt="post">내가 쓴 게시글
                     </a>
                 </div>
               </li>
               <li style="display: flex;">
                   <div class="list-group">
-                      <a href="./like_collection.html" class="list-group-item list-group-item-action">
+                      <a href="<c:url value='/mycommynity/likecommunity' />" class="list-group-item list-group-item-action">
                         <img class="side_img" src="${path}/resources/images/img/free-icon-heart-6063477 2.png" alt="heart">좋아요 누른 게시글
                       </a>
                   </div>
               </li>
               <li style="display: flex;">
                   <div class="list-group">
-                      <a href="./comment_collection.html" class="list-group-item list-group-item-action">
+                      <a href="<c:url value='/mycommynity/comment' />" class="list-group-item list-group-item-action">
                         <img class="side_img" src="${path}/resources/images/img/comment.png" >댓글 작성 게시물
                       </a>
                   </div>
@@ -188,11 +190,9 @@
                         </div>
                       </div>
                     </div>                    
-
                   </div> 
-                 
               </div>
-              </div>
+            </div>
 
         <!--댓글-->
             <ul class="Comment">
@@ -205,10 +205,12 @@
                 </div>
               </li>
               <li class="comment_show">
+               <div class="pro-dan">
                 <div>
                   <a href="#"><img class="profile" src="${path}/resources/images/icon/user01.png" alt="profile" ></a>
                   <a class="nickname" href="../ottt박소율/mypageshow.html">user</a>
-                  <span class="btn_warning_div">
+                </div>
+                  <div class="btn_warning_div">
                     <button type="button" class="btn_warning2" data-bs-toggle="dropdown" aria-expanded="false">
                      신고
                     </button>
@@ -218,7 +220,7 @@
                       <li><a class="dropdown-item" href="#">악의적인 스포</a></li>
                       <li><a class="dropdown-item" href="#">선정성</a></li>
                     </ul>
-                  </span>
+                  </div>
                 </div>
                 <div class="comment_write_box">
                 <p>
@@ -243,10 +245,12 @@
                 </div>
               </li>
               <li class="comment_show">
+               <div class="pro-dan">
                 <div>
                   <a href="#"><img class="profile" src="${path}/resources/images/icon/user01.png" alt="profile" ></a>
                   <a class="nickname" href="../ottt박소율/mypageshow.html">user</a>
-                  <span class="btn_warning_div">
+                </div>
+                  <div class="btn_warning_div">
                     <button type="button" class="btn_warning2" data-bs-toggle="dropdown" aria-expanded="false">
                      신고
                     </button>
@@ -256,7 +260,7 @@
                       <li><a class="dropdown-item" href="#">악의적인 스포</a></li>
                       <li><a class="dropdown-item" href="#">선정성</a></li>
                     </ul>
-                  </span>
+                  </div>
                 </div>
                 <div class="comment_write_box">
                 <p>

@@ -20,37 +20,39 @@
      <div class="wrap">
       <header>
         <div class="logo">
-          <a href="../">
+          <a href="<c:url value="/" />">
             <img src="${path}/resources/images/logo/OTTT.png" alt="logo">
           </a>
         </div>
         <nav class="gnb">
           <ul>
             <li>
-              <a href="../genre/1.movie.html">영화</a>
+              <a href="<c:url value="/genre/movie" />">영화</a>
             </li>
             <li>
-              <a href="../genre/2.drama.html">드라마</a>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
             </li>
             <li>
-              <a href="../genre/3.interest.html">예능</a>
+              <a href="<c:url value="/genre/interest" />">예능</a>
             </li>
             <li>
-              <a href="../genre/4.animation.html">애니</a>
+              <a href="<c:url value="/genre/animation" />">애니</a>
             </li>
             <li>
-              <a href="../자유게시판/자유게시판 main.html">게시판</a>
+              <a href="<c:url value="/community" />" style="color: #33ff33;">게시판</a>
             </li>
           </ul>
         </nav>
         <div class="h-icon">
           <ul>
             <li>
-              <a href="../OTTT 메인, 검색/search.html">
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
               </a>
             </li>
             <li>
-              <a href="../mypage황정현/mypage.html">
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
               </a>
             </li>
           </ul>
@@ -58,11 +60,11 @@
       </header>
       <div id="line-1" >
         <nav class="nav">
-          <a class="nav-link1" href="#">자유게시판</a>
-          <a class="nav-link1" href="./endmovie.html" style="color: #33ff33;">종료예정작</a>
-          <a class="nav-link1" href="#">가격정보</a>
-          <a class="nav-link1" href="#">Q&A</a>
-          <a class="nav-link1" href="#">공지사항</a>
+          <a class="nav-link1" href="<c:url value='/community' />">자유게시판</a>
+          <a class="nav-link1" href="<c:url value='/community/endmovie' />" style="color: #33ff33;">종료예정작</a>
+          <a class="nav-link1" href="<c:url value='/community/priceInfoTving' />">가격정보</a>
+          <a class="nav-link1" href="<c:url value='/community/QnA' />">Q&A</a>
+          <a class="nav-link1" href="<c:url value='/community/notice' />">공지사항</a>
         </nav>
       </div>
       <div id="line-2" >
@@ -72,7 +74,7 @@
       <main>
         <div class="endmovie-box">
           <ul><br/>
-            <li class="endmovie-month"><h1>OTTT 4월 종료 예정작</h1></li>
+            <li class="endmovie-month"><h1>Tving 4월 종료 예정작</h1></li>
             <br/>
             <li class="endmovie-list">
             <li><a href="#"><h5>2023.04.01<쿵푸팬더 2></h5></a></li>

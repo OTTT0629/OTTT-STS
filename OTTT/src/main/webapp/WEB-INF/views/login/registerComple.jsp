@@ -23,42 +23,42 @@
 	<div class="wrap">
 		<header>
 			<div class="logo">
-				 <a href= "<c:url value='/' /> ">
-				  <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
-				</a>
-			</div>
-			<nav class="gnb">
-				<ul>
-			    	<li>
-			    		<a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
-				    </li>
-				    <li>
-				      	<a href="../자유게시판/자유게시판 main.html">게시판</a>
-				    </li>
-			  	</ul>
-			</nav>
-        	<div class="h-icon">
-          		<ul>
-            		<li>
-						<a href="#">
-						<!-- <img src="./images/icon/search02.png" alt="검색"> -->
-						</a>
-		            </li>
-		            <li>
-		            	<a href="#">
-		                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
-		             	</a>
-		            </li>
-				</ul>
+				 <a href="<c:url value="/" />">
+            <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
+          </a>
+        </div>
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="<c:url value="/genre/movie" />">영화</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/interest" />">예능</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/animation" />">애니</a>
+            </li>
+            <li>
+              <a href="<c:url value="/community" />">게시판</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
+              </a>
+            </li>
+            <li>
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
+              </a>
+            </li>
+          </ul>
         	</div>
 		</header>
       
@@ -66,9 +66,9 @@
         	<img src = "${path}/resources/images/logo/OTTT.png" width="420" height="120">
         	<h1 style="font-size: 30px; display: inline-block;">환영합니다!</h1>
         	
-        	<form method="post" action="서버의url" id="login-form">
-        		<input type="text" style="border:0 solid black" name="userName" placeholder="아이디">
-            	<input type="password" style="border:0 solid black" name="userPassword" style="border:0 solid black" placeholder="비밀번호">
+        	<form method="post" action="<c:url value='/' />" id="login-form">
+        		<input type="text" style="border:0 solid black" name="id" placeholder="아이디">
+            	<input type="password" style="border:0 solid black" name="pwd" style="border:0 solid black" placeholder="비밀번호">
             	<input type="submit" value="로그인">
            	</form>
        	</div>
