@@ -60,7 +60,7 @@ reviewReply: /detailPage/reply
 	-아이디확인: /login/checkID
 	-비밀번호재설정: /login/checkPwd
 
-
+ 
 
 
 
