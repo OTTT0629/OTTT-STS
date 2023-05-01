@@ -1,4 +1,4 @@
-package com.ottt.ottt;
+package com.ottt.ottt.controller.workDetailPage;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
