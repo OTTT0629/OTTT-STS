@@ -1,4 +1,4 @@
-package com.ottt.dto;
+package com.ottt.ottt.dto;
 
 import java.util.Objects;
 

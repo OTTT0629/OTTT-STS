@@ -1,4 +1,4 @@
-package DTO;
+package com.ottt.ottt.dto;
 
 import java.util.Date;
 import java.util.Objects;

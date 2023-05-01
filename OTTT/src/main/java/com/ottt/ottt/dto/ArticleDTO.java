@@ -1,4 +1,4 @@
-package com.ottt.dto;
+package com.ottt.ottt.dto;
 import java.util.Date;
 /*게시글
  * 	article_no				bigint			generated always as identity primary key
