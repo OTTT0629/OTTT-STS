@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import= "java.net.URLDecoder"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!doctype html>
 <html lang="ko">
@@ -57,7 +58,7 @@
         	</div>
 		</header>
 			
-		<form action="<c:url value='${param.toURL }' />" method="post" onsubmit="return frmCheck(this)">
+		<form action="<c:url value='/login' />" method="post" onsubmit="return frmCheck(this)">
 			<div class = "Login">
 				<img src = "${path}/resources/images/logo/OTTT.png" width="420" height="120">
 			
@@ -67,8 +68,8 @@
 					</c:if>
 				</div>
 				
-				<input type="text" name="id" placeholder="test" value="${cookie.id.value}" autofocus="autofocus" style="border:0 solid black" />
-				<input type="password" name="pwd" style="border:0 solid black" placeholder="1234" />
+				<input type="text" name="user_id" placeholder="ID를 입력해주세요" value="${cookie.id.value}" autofocus="autofocus" style="border:0 solid black" />
+				<input type="password" name="user_pwd" style="border:0 solid black" placeholder="비밀번호를 입력해주세요" />
 				<input type="hidden" name="toURL" value= "${param.toURL }" />
 				
 				<button>로그인</button>

@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import= "java.net.URLDecoder"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!doctype html>
 <html lang="ko">
@@ -63,11 +64,11 @@
 		</header>
         
 		<section class="sec00">
-		    <form method="post" action="<c:url value="/signin/addInfo" />">
+		    <form:form modelAttribute="userDTO" method="post">
 		    <h1 style="font-size: 21px; display: inline-block;">회원가입</h1>
 		    	<div>
 					<div class="Id">
-						<input type="text" id="id" title="ID" maxlength="15"  placeholder="아이디 입력" required pattern="^[a-zA-Z0-9]+$">
+						<input type="text" name="user_id" id="id" title="ID" maxlength="15"  placeholder="아이디 입력" required pattern="^[a-zA-Z0-9]+$">
 					    <span class="errorMsg" id="idErrorMsg"></span> 
 					    <div class="idChk">
 		              	<span class="id_input_re_1">사용 가능한 아이디입니다.</span>
@@ -76,7 +77,7 @@
 					</div>
 					
 					<div class="password">
-					    <input type="password" id="password" title="PW" maxlength="20" placeholder="비밀번호 입력" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[^\da-zA-Z])(.{8,20})$">
+					    <input type="password" name="user_pwd" id="password" title="PW" maxlength="20" placeholder="비밀번호 입력" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[^\da-zA-Z])(.{8,20})$">
 					    <span class="errorMsg" id="passwordErrorMsg"></span>
 					</div>
 					
@@ -190,19 +191,19 @@
 		        </script>
 		        
 		        <div class="name">
-		        	<input type="text" id="name" title="NM" maxlength="10" placeholder="이름" >
+		        	<input type="text" name="user_nm" id="name" title="NM" maxlength="10" placeholder="이름" >
 		        	<span>
-		        		<select name="성별">
+		        		<select name="user_gen">
 				            <option value="">선택</option>
-				            <option value="남자">남자</option>
-				            <option value="여자">여자</option>
-				            <option value="비공개">비공개</option>
+				            <option value="1">남자</option>
+				            <option value="2">여자</option>
+				            <option value="0">비공개</option>
 			            </select>
 		            </span>
 		            
 		            <script>
 			            const form = document.querySelector('form');
-			            const genderSelect = form.querySelector('select[name="성별"]');
+			            const genderSelect = form.querySelector('select[name="user_gen"]');
 			
 			            form.addEventListener('submit', (event) => {
 			            	if (genderSelect.value === '') {
@@ -213,7 +214,7 @@
 					</script>
 		
 					<div class="nname">
-						<input type="text" id="nname" title="NNM" maxlength="10" placeholder="닉네임" >
+						<input type="text" name="user_nicknm" id="nname" title="NNM" maxlength="10" placeholder="닉네임" >
 					</div>
 					
 					<script>
@@ -235,7 +236,7 @@
 		            </script>
 		
 		          	<div class="email">
-		           		<input type="email" id="email" title="EM" maxlength="20"  placeholder="이메일" >
+		           		<input type="email" name="user_email" id="email" title="EM" maxlength="20"  placeholder="이메일" >
 		           		<span>
 		            		<select id="domain" name="직접입력">
 								<option value="select">직접입력</option>
@@ -269,7 +270,7 @@
 	          			<input type="submit" value="다음">
           			</div>
        			</div>
-   			</form>
+   			</form:form>
 		</section>
 	</div>
 	
