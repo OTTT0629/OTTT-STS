@@ -8,13 +8,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.ottt.ottt.dao.login.LoginUserDao;
+import com.ottt.ottt.dto.UserDTO;
+
 
 @Controller
 public class LoginController {
+	
+	@Autowired
+	LoginUserDao userDao;
 
 	//로그인 페이지
 	@GetMapping(value = "/login")
@@ -63,8 +70,9 @@ public class LoginController {
 	
 	//DB꺼 가져와서 CHECK해야함
 	private boolean loginCheck(String id, String pwd) {
-
-		return "test".equals(id) && "1234".equals(pwd);
+		UserDTO user = userDao.select(id);
+		if(user == null) return false;
+		return user.getUser_pwd().equals(pwd);
 	}
 	
 	@GetMapping("/logout")
