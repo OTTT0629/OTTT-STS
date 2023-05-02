@@ -5,8 +5,8 @@ import java.util.Objects;
 
 /*	신고
  * 	report_no		bigint primary key
-	, profile_no	bigint not null	
-	, target_profile_no	bigint not null	
+	, user_no		bigint not null	
+	, target_user_no	bigint not null	
 	, article_no	bigint not null	
 	, cmt_no		bigint not null	
 	, report_cnt	int not null
@@ -17,8 +17,8 @@ import java.util.Objects;
 public class ReportDTO {
 	
 	private Integer report_no;
-	private int 	profile_no;
-	private int		target_profile_no;
+	private int 	user_no;
+	private int		target_user_no;
 	private int		article_no;
 	private int		cmt_no;
 	private int		report_cnt;
@@ -40,21 +40,35 @@ public class ReportDTO {
 		this.report_no = report_no;
 	}
 
-	public int getProfile_no() {
-		return profile_no;
+	
+
+	public int getUser_no() {
+		return user_no;
 	}
 
-	public void setProfile_no(int profile_no) {
-		this.profile_no = profile_no;
+
+
+
+	public void setUser_no(int user_no) {
+		this.user_no = user_no;
 	}
 
-	public int getTarget_profile_no() {
-		return target_profile_no;
+
+	
+
+	public int getTarget_user_no() {
+		return target_user_no;
 	}
 
-	public void setTarget_profile_no(int target_profile_no) {
-		this.target_profile_no = target_profile_no;
+
+
+
+	public void setTarget_user_no(int target_user_no) {
+		this.target_user_no = target_user_no;
 	}
+
+
+
 
 	public int getArticle_no() {
 		return article_no;
@@ -101,8 +115,8 @@ public class ReportDTO {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(article_no, cmt_no, profile_no, report_cnt, report_date, report_no, report_type,
-				target_profile_no);
+		return Objects.hash(article_no, cmt_no, user_no, report_cnt, report_date, report_no, report_type,
+				target_user_no);
 	}
 
 
@@ -117,10 +131,10 @@ public class ReportDTO {
 		if (getClass() != obj.getClass())
 			return false;
 		ReportDTO other = (ReportDTO) obj;
-		return article_no == other.article_no && cmt_no == other.cmt_no && profile_no == other.profile_no
+		return article_no == other.article_no && cmt_no == other.cmt_no && user_no == other.user_no
 				&& report_cnt == other.report_cnt && Objects.equals(report_date, other.report_date)
 				&& Objects.equals(report_no, other.report_no) && report_type == other.report_type
-				&& target_profile_no == other.target_profile_no;
+				&& target_user_no == other.target_user_no;
 	}
 
 
@@ -128,8 +142,8 @@ public class ReportDTO {
 
 	@Override
 	public String toString() {
-		return "ReportDTO [report_no=" + report_no + ", profile_no=" + profile_no + ", target_profile_no="
-				+ target_profile_no + ", article_no=" + article_no + ", cmt_no=" + cmt_no + ", report_cnt=" + report_cnt
+		return "ReportDTO [report_no=" + report_no + ", profile_no=" + user_no + ", target_profile_no="
+				+ target_user_no + ", article_no=" + article_no + ", cmt_no=" + cmt_no + ", report_cnt=" + report_cnt
 				+ ", report_type=" + report_type + ", report_date=" + report_date + "]";
 	}
 	
