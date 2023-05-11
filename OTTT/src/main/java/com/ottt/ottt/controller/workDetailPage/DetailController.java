@@ -11,10 +11,7 @@ public class DetailController {
 		return "/workDetailPage/workdetailpage";
 	}
 	
-	@GetMapping(value = "/detailPage/review")
-	public String workReview() {
-			return "/workDetailPage/review";		
-	}
+
 	
 	@GetMapping(value = "/detailPage/reply")
 	public String reviewReply() {

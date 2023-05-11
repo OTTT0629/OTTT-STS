@@ -21,10 +21,13 @@ public class ReviewDTO {
 
 	private Integer review_no;
 	private int content_no;
-	private int user_no;
 	private float rating;
 	private String review_content;
 	private Date review_create_dt;
+	private Integer user_no;
+	
+	private String user_nicknm;
+	private UserDTO userDTO;
 	
 	public ReviewDTO() {}
 
@@ -42,14 +45,6 @@ public class ReviewDTO {
 
 	public void setContent_no(int content_no) {
 		this.content_no = content_no;
-	}
-
-	public int getUser_no() {
-		return user_no;
-	}
-
-	public void setUser_no(int user_no) {
-		this.user_no = user_no;
 	}
 
 	public float getRating() {
@@ -78,7 +73,8 @@ public class ReviewDTO {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(content_no, rating, review_create_dt, review_no, user_no);
+		return Objects.hash(content_no, rating, review_content, review_create_dt, review_no, userDTO, user_nicknm,
+				user_no);
 	}
 
 	@Override
@@ -90,16 +86,42 @@ public class ReviewDTO {
 		if (getClass() != obj.getClass())
 			return false;
 		ReviewDTO other = (ReviewDTO) obj;
-		return content_no == other.content_no && rating == other.rating
+		return content_no == other.content_no && Float.floatToIntBits(rating) == Float.floatToIntBits(other.rating)
+				&& Objects.equals(review_content, other.review_content)
 				&& Objects.equals(review_create_dt, other.review_create_dt)
-				&& Objects.equals(review_no, other.review_no) && user_no == other.user_no;
+				&& Objects.equals(review_no, other.review_no) && Objects.equals(userDTO, other.userDTO)
+				&& Objects.equals(user_nicknm, other.user_nicknm) && Objects.equals(user_no, other.user_no);
 	}
 
 	@Override
 	public String toString() {
-		return "ReviewDTO [review_no=" + review_no + ", content_no=" + content_no + ", user_no=" + user_no + ", rating="
-				+ rating + ", review_content=" + review_content + ", review_create_dt=" + review_create_dt + "]";
+		return "ReviewDTO [review_no=" + review_no + ", content_no=" + content_no + ", rating=" + rating
+				+ ", review_content=" + review_content + ", review_create_dt=" + review_create_dt + ", user_no="
+				+ user_no + ", user_nicknm=" + user_nicknm + ", userDTO=" + userDTO + "]";
+	}
+
+	public UserDTO getUserDTO() {
+		return userDTO;
+	}
+
+	public void setUserDTO(UserDTO userDTO) {
+		this.userDTO = userDTO;
 	}
 	
+    public String getUser_nicknm() {
+        return user_nicknm;
+    }
+
+    public void setUser_nicknm(String user_nicknm) {
+        this.user_nicknm = user_nicknm;
+    }
+
+	public Integer getUser_no() {
+		return user_no;
+	}
+
+	public void setUser_no(int user_no) {
+		this.user_no = user_no;
+	}
 	
 }

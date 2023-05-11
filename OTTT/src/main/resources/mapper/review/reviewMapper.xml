@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.ottt.ottt.dao.review.ReviewMapper">
+  
+    <select id="selectAll" resultType="ReviewDTO" >
+		select user_nicknm, rating, review_content, tb_review.user_no, review_no 
+		from tb_review, tb_user
+		where tb_review.user_no = tb_user.user_no 
+  		order by review_create_dt desc
+  	</select> 	
+  	
+	  <select id="count" resultType="int">
+	  	select count(*) from tb_review;	
+	  </select>
+	  
+	  <insert id="insertReview" parameterType="ReviewDTO" >
+	  insert into tb_review(user_no,rating,review_content) values (#{user_no},#{rating},#{review_content});
+	  </insert>
+  </mapper>	

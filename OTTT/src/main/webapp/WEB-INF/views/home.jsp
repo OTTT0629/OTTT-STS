@@ -124,7 +124,7 @@
                                     </div>                           
                                     <div class="work-my">
                                         <div><a href="#">찜</a></div>
-                                        <div><a href="../OTTT_review_page유찬희/review.html">리뷰쓰기</a></div>
+                                        <div><a href="<c:url value="/detailPage/review" />">리뷰쓰기</a></div>
                                     </div>
                                 </div>
                             </a>
