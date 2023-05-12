@@ -34,6 +34,8 @@ body{
 header{
     width: 1200px;
     height: 130px;
+    
+    box-sizing: border-box;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -86,13 +88,6 @@ header{
     justify-content: space-evenly;
     margin-top: 12px;
 }
-
-/* .h-icon  img{
-    width: 50px;
-} */
-
-
-
 .h-icon > ul > li:first-child > a{
     background:url("../../images/icon/search02.png");
     background-repeat: no-repeat;
@@ -103,7 +98,7 @@ header{
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../../images/img/profile.png");
+    background:url("../../images/icon/user01.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -120,44 +115,84 @@ header{
     height: 32px;
 }
 
-/* .h-icon > ul > li:last-child > a:hover{
-    background: url("../images/icon/user-h.png");
+.h-icon > ul > li:last-child > a:hover{
+    background: url("../../images/icon/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
     width: 32px;
     height: 32px;
-} */
-
-/* 헤더 */
-
-
-.sec01 {
-    width: 1200px;
-    height: 600px;
-    margin: 40px auto 0 auto;
 }
 
-.info-main{
+/* main */
+
+/* section01 */
+.sec00 {
+    height: 700px;
+    width: 1200px;
+    margin: 30px auto;
+    padding: 40px 72px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 30px;   
+    border-radius: 16px;
+  }
+  .password {
+    margin-top: 15px;
+    margin-bottom: 30px; 
+}
+#password{
+    width: 400px;
+    height: 40px;
+    background-color: #3f3b3b;
+    display: flex;
+    color: #fff;
+    border: 2px solid gray;
+}
+.passwordCheck {
+    margin-bottom: 30px;
+}
+#passwordCheck{
+    width: 400px;
+    height: 40px;
+    background-color: #3f3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border: 2px solid gray;
+}
+.passwordCheck input {
+    width: 45%;
+  }
+.back {
+    float: left;
+    margin-right: 100px;
+}
+.complate {
+    float: left;
 }
 
-.info-main > div {
-    width: 500px;
-    height: 60px;
-    background-color: #3F3B3B;
-    text-align: center;
-    line-height: 50px;
-    margin: 20px;
+.complate input[type="submit"] {
+    width: 400px; 
+    height: 70px;
+    margin-top: 120px;
+    border-width: 1px;
+    border-radius: 12px;
+    font-size: 25px;
+    border: 2px solid gray;
 }
-
-.byebye {
-	width: 500px;
-    height: 60px;
-	border: 0;
-	background-color: transparent;
-	color: 	#fff;
+.back input[type="button"] {
+    background-color:#3f3b3b;
+    color: #fff;
 }
+.complate input[type="submit"] {
+    background-color:#33ff33;
+}
+  .errorMsg {
+    color: red; 
+    position: absolute;
+    margin-top: 5px;
+    }
+  

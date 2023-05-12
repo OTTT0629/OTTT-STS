@@ -34,7 +34,7 @@ body{
 header{
     width: 1200px;
     height: 130px;
-   
+    
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
@@ -45,7 +45,7 @@ header{
     width: 230px;
     height : 95px;   
     margin-top: 30px;
-    margin-right: 32px;
+    margin-right: 46px;
 }
 
 .logo > a > img{
@@ -91,20 +91,23 @@ header{
     padding-left: 2rem;
 }
 
+/* .h-icon  img{
+    width: 50px;
+} */
 
 
 
 .h-icon > ul > li:first-child > a{
-    background-image: url("../../img/search02.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 32px;
-    width: 32px;
-    height: 32px;
+	background-image: url("../../img/search02.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 32px;
+	width: 32px;
+	height: 32px;
 }
 
 .h-icon > ul > li:first-child > a:hover{
-    background-image: url("../../img/search-h.png");
+    background: url("../../img/search-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -113,16 +116,18 @@ header{
 }
 
 .h-icon > ul > li:last-child > a{
-    background-image: url("../../img/user01.png");
-    background-repeat: no-repeat;
+    background:url("../../img/user01.png");
+    background-repeat:no-repeat;
     background-position: center;
     background-size: 32px;
     width: 32px;
     height: 32px;
 }
 
+
+
 .h-icon > ul > li:last-child > a:hover{
-    background-image: url("../../img/user-h.png");
+    background: url("../../img/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -140,24 +145,11 @@ header{
     width: 370px;
     padding: 40px;
     box-sizing: border-box;
-    
+    text-align: center;
     position: absolute;
-    top: 0%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, 50%)
-	
-}
-
-.id_input {
-	border: 2px solid gray;
-}
-
-.pw_input {
-	border: 2px solid gray;
-}
-
-.login_button {
-	border: 2px solid gray;
 	
 }
 
@@ -175,48 +167,35 @@ header{
 }
 
 
+
+
+.id_input {
+	border: 2px solid gray;
+}
+
+.pw_input {
+	border: 2px solid gray;
+}
+
+
 .hihi > input[type="submit"]{
     color: #000;
     font-size: 16px;
     height: 40px;
     background-color:#33ff33;
     margin-top: 1px;
-    border-color: #33ff33;
-   
-}
-
-
-
-.join{
-    position: relative;
-    top: 50px;
-    left: 3px;
-    width: 92px;
-    background-color:#3F3B3B;
-    color:#ffffff;
-    border-width: 0px;
-}
-
-.naver{
-    position: relative;
-    top: 100px;
-}
-   
-.kakao{
-    position: relative;
-    top: 95px;
-}
-.google{
-    position: relative;
-    top: 90px;
 }
 
   /* 로그인 실패시 경고글 */
 .login_warn{
 	position: absolute;
-    top: 200px;
-    left: 440px;
+    top: 300px;
+   	right: 800px;
     text-align: center;
     color : red;
 }
+
+
+
+
 

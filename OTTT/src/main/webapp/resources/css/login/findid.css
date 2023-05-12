@@ -17,12 +17,10 @@ a{
 ul,li,ol{
     list-style: none;
 }
-
 body{
     background-color: #202020;
     color: #fff;   
 }
-
 .wrap{
     width: 100%;
     height: 100%;
@@ -34,6 +32,8 @@ body{
 header{
     width: 1200px;
     height: 130px;
+   
+    box-sizing: border-box;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -90,9 +90,6 @@ header{
 /* .h-icon  img{
     width: 50px;
 } */
-
-
-
 .h-icon > ul > li:first-child > a{
     background:url("../../images/icon/search02.png");
     background-repeat: no-repeat;
@@ -103,7 +100,7 @@ header{
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../../images/img/profile.png");
+    background:url("../../images/icon/user01.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -120,44 +117,105 @@ header{
     height: 32px;
 }
 
-/* .h-icon > ul > li:last-child > a:hover{
-    background: url("../images/icon/user-h.png");
+.h-icon > ul > li:last-child > a:hover{
+    background: url("../../images/icon/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
     width: 32px;
     height: 32px;
-} */
-
-/* 헤더 */
-
-
-.sec01 {
-    width: 1200px;
-    height: 600px;
-    margin: 40px auto 0 auto;
 }
 
-.info-main{
+/* main */
+
+/* section01 */
+
+.sec00 {
+    height: 700px;
+    width: 1200px;
+    margin: 30px auto;
+    padding: 40px 72px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 30px;   
-}
+    border-radius: 16px;
+}   
 
-.info-main > div {
-    width: 500px;
-    height: 60px;
-    background-color: #3F3B3B;
-    text-align: center;
-    line-height: 50px;
-    margin: 20px;
+.email {
+    margin-top: 15px;
 }
-
-.byebye {
-	width: 500px;
-    height: 60px;
-	border: 0;
-	background-color: transparent;
-	color: 	#fff;
+#email{
+    width: 180px;
+    height: 40px;
+    background-color: #3f3b3b;
+    color: #fff;
+    border: 2px solid gray;
+}
+.email select {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 40px;
+    background-color: #3f3b3b;
+    width: 100px;
+    color: silver;
+    border: 2px solid gray;
+  }
+#send-verification-code {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+    background-color: #3f3b3b;
+    color: silver;
+    border: 2px solid gray;
+    font-size: 13px;
+}
+#send-verification-code{
+  border-width: 1px;
+}
+#Certification{
+    width: 300px;
+    height: 40px;
+    background-color: #3f3b3b;
+    color: #fff;
+    border: 2px solid gray;
+}
+.Certification {
+    margin-top: 30px;
+}
+#completion {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 40px;
+    background-color: #3f3b3b;
+    color: silver;
+    border: 2px solid gray;   
+}
+.back {
+    float: left;
+    margin-right: 100px;
+}
+.complate {
+    float: left;
+}
+.back input[type="button"],
+.complate input[type="submit"] {
+    width: 150px; 
+    height: 70px;
+    margin-top: 120px;
+    border-width: 1px;
+    border-radius: 12px;
+    font-size: 25px;
+    border: 2px solid gray;
+}
+.back input[type="button"] {
+    background-color:#3f3b3b;
+    color: #fff;
+}
+.complate input[type="submit"] {
+    background-color:#33ff33;
 }

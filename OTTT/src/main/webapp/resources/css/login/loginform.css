@@ -34,6 +34,8 @@ body{
 header{
     width: 1200px;
     height: 130px;
+   
+    box-sizing: border-box;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -103,7 +105,7 @@ header{
 }
 
 .h-icon > ul > li:last-child > a{
-    background:url("../../images/img/profile.png");
+    background:url("../../images/icon/user01.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -120,44 +122,92 @@ header{
     height: 32px;
 }
 
-/* .h-icon > ul > li:last-child > a:hover{
-    background: url("../images/icon/user-h.png");
+.h-icon > ul > li:last-child > a:hover{
+    background: url("../../images/icon/user-h.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
     width: 32px;
     height: 32px;
-} */
-
-/* 헤더 */
-
-
-.sec01 {
-    width: 1200px;
-    height: 600px;
-    margin: 40px auto 0 auto;
 }
 
-.info-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;   
-}
+/* main */
 
-.info-main > div {
+/* section01 */
+
+
+
+.Login{
     width: 500px;
-    height: 60px;
-    background-color: #3F3B3B;
-    text-align: center;
-    line-height: 50px;
-    margin: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    
+    position: absolute;
+    top:-10%;
+    left: 50%;
+    transform: translate(-50%, 50%)
+	
+}
+input[type="text"], input[type="password"] {
+    width: 420px;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    background-color:#3F3B3B;
+    color: #33ff33;
+    position: relative;
+    top: 20px;
+  }
+
+.join{
+    position: relative;
+    top:5px;
+    left: 3px;
+    width: 135px;
+    height: 30px;
+    background-color:#3F3B3B;
+    color:#ffffff;
+    border-width: 0px;
+}
+.naver {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   
+  .kakao {
+    position: absolute;
+    top: calc(98% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.google{
+    position: absolute;
+    top: calc(98% + 60px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.byebye {
-	width: 500px;
-    height: 60px;
-	border: 0;
-	background-color: transparent;
-	color: 	#fff;
+#msg {
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	margin-top: 20px;
 }
+
+button {
+    color: #000;
+    font-size: 16px;
+    height: 50px;
+    background-color:#33ff33;
+    width: 420px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius:5px;
+}
+
+
