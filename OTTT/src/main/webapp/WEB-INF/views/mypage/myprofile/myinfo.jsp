@@ -11,69 +11,97 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="${path}/resources/css/mypage/myinfo.css" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
 </head>
 <body>
 	<div class="wrap">
 		<header>
 			<div class="logo">
-				<a href="../OTTT 메인, 검색/main.html">
+				<a href="<c:url value="/" />">
 				  <img src="${path}/resources/images/logo/OTTT.png" alt="로고">
 				</a>
 			</div>
 			<nav class="gnb">
 				<ul>
-			    	<li>
-			    		<a href="../0413장르 폼테크추가(수형)/1. index movie.html">영화</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/2. index darama.html">드라마</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/3. index interest.html">예능</a>
-				    </li>
-				    <li>
-				      	<a href="../0413장르 폼테크추가(수형)/4. index animation.html">애니</a>
-				    </li>
-				    <li>
-				      	<a href="../자유게시판/자유게시판 main.html">게시판</a>
-				    </li>
-			  	</ul>
-			</nav>
-        	<div class="h-icon">
-          		<ul>
-            		<li>
-						<a href="../OTTT 메인, 검색/search.html">
-						<!-- <img src="./images/icon/search02.png" alt="검색"> -->
-						</a>
-		            </li>
-		            <li>
-		            	<a href="../mypage황정현/mypage.html">
-		                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
-		             	</a>
-		            </li>
-				</ul>
+            <li>
+              <a href="<c:url value="/genre/movie" />">영화</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/drama" />">드라마</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/interest" />">예능</a>
+            </li>
+            <li>
+              <a href="<c:url value="/genre/animation" />">애니</a>
+            </li>
+            <li>
+              <a href="<c:url value="/community" />">게시판</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="h-icon">
+          <ul>
+            <li>
+              <a href="<c:url value='/search' />">
+                <!-- <img src="./images/icon/search02.png" alt="검색"> -->
+              </a>
+            </li>
+            <li>
+              <a href="<c:url value='/mypage' />">
+                <!-- <img src="./images/icon/user01.png" alt="내 정보"> -->
+              </a>
+            </li>
+          </ul>
         	</div>
 		</header>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".done").on("click", function() {
+ 					if (!confirm("정말 바꾸시겠습니까?")) return;
+					
+					let form = $("#form")
+					form.attr("action", "<c:url value='/mypage/setting/myinfo ' />")
+					form.attr("method", "post")
+					form.submit()
+					
+					/*$(".body").html("수정이 완료되었습니다.");
+			        $('#Modal').modal('show'); */
+					
+				})
+				
+				$(".cancleBtn").on("click", function() {
+					location.href = "<c:url value ='/mypage/setting' />"
+				})				
+				
+			})
+		</script>
+		
+		<script type="text/javascript">
+			let msg = "${msg}"
+			if(msg == "CHG_ERR") alert("비밀번호 변경에 실패했습니다. 다시 시도해 주세요")
+    	</script>
 
 		<section class="sec01">
-			<form action="#" class="info-main">
+			<form action="" id="form" class="info-main">
 				<div class="info">
 					<label>이메일</label>
-					<input type="text" placeholder="이메일" class="input-field" disabled="disabled"/>
+					<input type="text" name="user_email" placeholder="${userDTO.user_email }" class="input-field" disabled="disabled"/>
 				</div>
 
 				<div class="info">
 					<label>비밀번호</label>
-            		<input type="password" id="pwd" class="input-field" placeholder="비밀번호" autofocus="autofocus"/>
+            		<input type="password" name="user_pwd" id="pwd" class="input-field" placeholder="비밀번호" autofocus="autofocus"/>
           		</div>
           		
           		<div class="info">
           			<label>비밀번호 확인</label>
-		            <input type="password" id="repwd" class="input-field" placeholder="비밀번호 확인" />
+		            <input type="password" name="re_pwd" id="repwd" class="input-field" placeholder="비밀번호 확인" />
 		        </div>
 		        	<div class="button">
-		        		<button class="cancle" type="button" onclick="">취소</button>
-		            	<button class="done" type="button" onclick="">확인</button>
+		        		<button class="cancleBtn" type="button">취소</button>
+		            	<button class="done" type="button">확인</button>
 		          	</div>
           	</form>
        	</section>
